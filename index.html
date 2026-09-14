@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Aditi 💞</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+        }
+
+        h1 {
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff4d6d;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff1e4d;
+        }
+
+        #message {
+            display: none;
+            margin-top: 30px;
+            font-size: 28px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.7);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .heart {
+            font-size: 40px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey Aditi 💖</h1>
+    <p>Click the button for a surprise 👇</p>
+
+    <button onclick="showMessage()">Click Me 💝</button>
+
+    <div id="message">
+        <p class="heart">❤️</p>
+        <p>I love you so much Aditi 💞</p>
+        <p>You are my happiness 😊</p>
+
+        <!-- Photos -->
+        <div>
+            <img src="image 1.png" alt="Aditi Photo 1">
+            <img src="image 2.png" alt="Aditi Photo 2">
+            <img src="image3.png" alt="Aditi Photo 3">
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
